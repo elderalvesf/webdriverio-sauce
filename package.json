@@ -1,0 +1,24 @@
+{
+  "name": "qa-webdriverio-js-pom",
+  "version": "1.0.0",
+  "description": "Professional E2E test automation framework using WebDriverIO, JavaScript, and Page Object Model",
+  "type": "module",
+  "scripts": {
+    "test": "wdio run wdio.conf.js",
+    "test:login": "wdio run wdio.conf.js --spec test/specs/login.spec.js",
+    "test:inventory": "wdio run wdio.conf.js --spec test/specs/inventory.spec.js",
+    "test:cart": "wdio run wdio.conf.js --spec test/specs/cart.spec.js",
+    "test:checkout": "wdio run wdio.conf.js --spec test/specs/checkout.spec.js",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "latest",
+    "@wdio/cli": "latest",
+    "@wdio/local-runner": "latest",
+    "@wdio/mocha-framework": "latest",
+    "@wdio/spec-reporter": "latest",
+    "allure-commandline": "latest",
+    "chromedriver": "^147.0.4",
+    "wdio-chromedriver-service": "latest"
+  }
+}

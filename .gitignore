@@ -1,0 +1,7 @@
+node_modules/
+allure-results/
+allure-report/
+.DS_Store
+*.log
+.env
+BRIEFING_Projeto1_WebDriverIO_JavaScript_POM.md
