@@ -1,6 +1,6 @@
 # qa-webdriverio-js-pom
 
-![E2E Tests](https://github.com/elderalvesf/qa-webdriverio-js-pom/actions/workflows/ci.yml/badge.svg)
+![E2E Tests](https://github.com/elderalvesf/webdriverio-sauce/actions/workflows/ci.yml/badge.svg)
 [![WebDriverIO](https://img.shields.io/badge/WebDriverIO-v8-EA5906?style=flat&logo=webdriverio&logoColor=white)](https://webdriver.io)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2022+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Mocha](https://img.shields.io/badge/Mocha-8896F7?style=flat&logo=mocha&logoColor=white)](https://mochajs.org)
