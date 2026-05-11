@@ -13,7 +13,9 @@ export const config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: ['chromedriver'],
+    services: [['chromedriver', {
+        chromedriverCustomPath: process.env.CHROMEDRIVER_EXECUTABLE_PATH
+    }]],
     framework: 'mocha',
     reporters: [
         'spec',
