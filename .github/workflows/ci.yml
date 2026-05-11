@@ -2,9 +2,9 @@ name: E2E Tests
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test:
@@ -21,6 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Install ChromeDriver matching CI Chrome
+        run: |
+          CHROME_MAJOR=$(google-chrome --version | grep -oP '\d+' | head -1)
+          npm install chromedriver@${CHROME_MAJOR} --no-save
 
       - name: Run E2E tests
         run: npm test
