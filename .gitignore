@@ -5,3 +5,4 @@ allure-report/
 *.log
 .env
 BRIEFING_Projeto1_WebDriverIO_JavaScript_POM.md
+.claude/
